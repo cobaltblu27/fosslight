@@ -851,9 +851,6 @@ public final class Url {
 		/** API 3rd Party 조회 */
 		public static final String FOSSLIGHT_API_PARTNER_SEARCH			= "/partners";
 
-		/** API 3rd Party Add Watcher */
-		public static final String FOSSLIGHT_API_PARTNER_ADD_WATCHER			= "/partner_watcher_add";
-
 		/** OSS */
 		/** API OSS List 조회 */
 		public static final String FOSSLIGHT_API_OSS_SEARCH				= "/oss";
@@ -877,10 +874,10 @@ public final class Url {
 		public static final String FOSSLIGHT_API_PROJECT_SEARCH			= "/projects";
 
 		/** API Project Model List 조회 */
-		public static final String FOSSLIGHT_API_MODEL_SEARCH			= "/model_search";
+		public static final String FOSSLIGHT_API_MODEL_SEARCH			= "/projects/models";
 
 		/** API Update Project Model */
-		public static final String FOSSLIGHT_API_MODEL_UPDATE			= "/model_update";
+		public static final String FOSSLIGHT_API_MODEL_UPDATE			= "/projects/{id}/models";
 
 		/** API Update Project Model WITH FILE */
 		public static final String FOSSLIGHT_API_MODEL_UPDATE_UPLOAD_FILE		= "/model_update_upload_file";
@@ -889,21 +886,21 @@ public final class Url {
 		public static final String FOSSLIGHT_API_PROJECT_BOM_EXPORT	    = "/prj_bom_export";
 
 		/** API Project BOM Tab Export JSON*/
-		public static final String FOSSLIGHT_API_PROJECT_BOM_EXPORT_JSON	    = "/prj_bom_export_json";
+		public static final String FOSSLIGHT_API_PROJECT_BOM_EXPORT_JSON	    = "/projects/{id}/bom/json";
 
 		/** API BOM COMPARE */
-		public static final String FOSSLIGHT_API_PROJECT_BOM_COMPARE		= "/prj_bom_compare";
+		public static final String FOSSLIGHT_API_PROJECT_BOM_COMPARE		= "/projects/compareBom";
 
 		/** API Project Add Watcher */
 		public static final String FOSSLIGHT_API_PROJECT_ADD_WATCHER		= "/prj_watcher_add";
 
 		/** API OSS Report upload */
-		public static final String FOSSLIGHT_API_OSS_REPORT_SRC			= "/oss_report_src";
-		public static final String FOSSLIGHT_API_OSS_REPORT_BIN			= "/oss_report_bin";
-		public static final String FOSSLIGHT_API_OSS_REPORT_ANDROID		= "/oss_report_android";
+		public static final String FOSSLIGHT_API_OSS_REPORT_SRC			= "/projects/{id}/src";
+		public static final String FOSSLIGHT_API_OSS_REPORT_BIN			= "/projects/{id}/bin";
+		public static final String FOSSLIGHT_API_OSS_REPORT_ANDROID		= "/projects/{id}/reportAndroid";
 
 		/** API Verification Packaging Upload */
-		public static final String FOSSLIGHT_API_PACKAGE_UPLOAD			= "/package_upload";
+		public static final String FOSSLIGHT_API_PACKAGE_UPLOAD			= "/projects/{id}/packages";
 
 
 		/** VULNABILITY */
